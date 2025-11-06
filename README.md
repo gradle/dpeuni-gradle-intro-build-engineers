@@ -23,6 +23,13 @@ training module. In this exercise you will go over the following:
 * Basic experience with JVM software development
 
 ---
+## Scenario
+
+In this exercise, you will author a task that checks the size of a package file produced during the build.
+If the size is too large, it will fail the build. You will author a *task type* in the `buildSrc` folder
+and then author a task using that task type.
+
+---
 ## Step 1 - Author Basic Task Type and Custom Task
 
 [Documentation reference](https://docs.gradle.org/current/userguide/implementing_custom_tasks.html#header)
