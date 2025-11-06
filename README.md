@@ -86,6 +86,7 @@ maxFileSizeInBytes = 1024L * 1024L * 1L
 4. Set `fileToValidate` to the output of the `createLargeOutputFile` task, hint:
 
 ```kotlin
+// Use this as a starting point, you still need to get the output
 tasks.named<GenerateRandomFile>("createLargeOutputFile").get()
 ```
 
