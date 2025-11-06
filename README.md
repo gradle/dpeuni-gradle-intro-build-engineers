@@ -55,7 +55,7 @@ fun action() {
     val length : Long = file.length()
 
     if (length > maxFileSizeInBytes.get()) {
-        logger.error("Input file: ${file.absolutePath} is too large")
+        throw GradleException("Input file: ${file.absolutePath} is too large")
     } else {
         logger.lifecycle("Input file: ${file.absolutePath} is acceptable size")
     }
