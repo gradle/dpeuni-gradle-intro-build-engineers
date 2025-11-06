@@ -109,4 +109,6 @@ In this step you will use inferred task dependency instead of the `dependsOn`.
 tasks.named<GenerateRandomFile>("createLargeOutputFile").get()
 ```
 
+5. Run the `validateOutputSize` task and see the failure output. It should still run the `createLargeOutputFile` first
+
 [Solution reference](solutions/step3)
