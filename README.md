@@ -32,6 +32,8 @@ and then author a task using that task type.
 ---
 ## Step 1 - Author Basic Task Type and Custom Task
 
+In this step, you will create the outline of the task type and register a task.
+
 [Documentation reference](https://docs.gradle.org/current/userguide/implementing_custom_tasks.html#header)
 
 1. Open the Gradle project in this repository in an editor of your choice
@@ -47,6 +49,14 @@ and then author a task using that task type.
 
 ---
 ## Step 2 - Inputs and Validating
+
+In this step you will add inputs to the task type:
+
+* What is the max file size allowed
+* Location of the file to check
+
+Then you will fill in the action that uses the inputs. Finally, you will update the task
+to provide values for the input, and make the task depend on another task.
 
 [Documentation reference](https://docs.gradle.org/current/userguide/implementing_custom_tasks.html#header)
 
@@ -84,6 +94,8 @@ maxFileSizeInBytes = 1024L * 1024L * 1L
 
 ---
 ## Step 3 - Using Inferred Task Dependency
+
+In this step you will use inferred task dependency instead of the `dependsOn`.
 
 [Documentation reference](https://docs.gradle.org/current/userguide/implementing_custom_tasks.html#header)
 
